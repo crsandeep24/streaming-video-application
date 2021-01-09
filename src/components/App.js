@@ -6,11 +6,13 @@ import StreamEdit from "./Streams/StreamEdit";
 import StreamList from "./Streams/StreamList";
 import StreamShow from "./Streams/StreamShow";
 import Header from "./Header";
+import DarkMode from "./DarkMode";
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+        <DarkMode />
         <Header />
         <Route path="/" exact component={StreamList} />
         <Route path="/streams/new" exact component={StreamCreate} />
