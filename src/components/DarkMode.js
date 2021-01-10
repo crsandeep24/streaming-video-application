@@ -14,8 +14,12 @@ const DarkMode = () => {
 
   return (
     <div>
-      <h1>Header</h1>
-      <button onClick={() => setDarkMode(!darkMode)}>Toggle Dark Mode</button>
+      <button
+        className="ui orange button"
+        onClick={() => setDarkMode(!darkMode)}
+      >
+        Toggle Dark Mode
+      </button>
     </div>
   );
 };
